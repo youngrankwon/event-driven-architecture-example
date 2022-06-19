@@ -1,0 +1,32 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /customer-order/customer-service
+
+spring:
+  application:
+    name : customer-service
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:test;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /console
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    database: H2
+    show-sql: true
+
+customer:
+  topic:
+    name: customerTopic
+
+order:
+  topic:
+    name: orderTopic
+
+kafka:
+  bootstrapAddress: localhost:9092
