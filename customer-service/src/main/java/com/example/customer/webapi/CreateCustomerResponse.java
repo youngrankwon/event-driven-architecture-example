@@ -1,8 +1,6 @@
 package com.example.customer.webapi;
 
 
-import com.example.customer.domain.Customer;
-
 import java.math.BigDecimal;
 
 public class CreateCustomerResponse {

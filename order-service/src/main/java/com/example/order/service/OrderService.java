@@ -4,7 +4,6 @@ import com.example.common.domain.OrderDetail;
 import com.example.common.domain.OrderDetails;
 import com.example.order.aync.OrderProducer;
 import com.example.order.domain.OrderRepository;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 

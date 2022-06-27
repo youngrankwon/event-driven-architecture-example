@@ -29,4 +29,4 @@ order:
     name: orderTopic
 
 kafka:
-  bootstrapAddress: localhost:9092
+  bootstrapAddress: b-2.edamsk.zn38qj.c3.kafka.ap-northeast-2.amazonaws.com:9092,b-1.edamsk.zn38qj.c3.kafka.ap-northeast-2.amazonaws.com:9092

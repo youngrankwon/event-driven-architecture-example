@@ -1,11 +1,6 @@
 package com.example.order.webapi;
 
 
-import com.example.common.domain.OrderDetail;
-import com.example.common.domain.OrderDetails;
-import com.example.common.domain.OrderState;
-
-import javax.persistence.Embedded;
 import java.math.BigDecimal;
 
 public class CreateOrderResponse {
