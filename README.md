@@ -13,13 +13,14 @@ cd order-service\
 ./gradlew build
 
 <h2>접속 URL</h2>
-- http://ip:8080/customer-order/customer-service/swagger-ui
-- http://ip:8080/customer-order/order-service/swagger-ui
+- 고객: http://localhost:8081/customer-order/customer-service/swagger-ui/index.html
+- 주문: http://localhost:8082/customer-order/order-service/swagger-ui/index.html
 
 <h2>시나리오</h2>
 EDA 워크샵에서 사용할 서비스는 고객(Customer)와 주문(Order) 2개의 서비스로 구성되어 있으며 신규 고객을 등록할때 이름(Name)과 그 고객이 사용수 있는 선지불금(Credit)을 입력합니다. 고객이 등록되고 나면 고객ID(Customer ID)를 리턴 받습니다. 주문(Order)은 이 고객ID를 이용해 할 수 있으나 보유한 선지불금(Credit) 내에서 할 수 있습니다. 만약 고객ID에 있는 Credit을 초과하는 주문을 했을 경우 주문은 취소되고 선지불금은 주문 이전의 금액으로 원복되어야 합니다.
 
 이 시나리오의 유즈케이스 다이어그램은 아래와 같습니다.
+
 ![./img/usecase.png](.img/usecase.png)
 
 
