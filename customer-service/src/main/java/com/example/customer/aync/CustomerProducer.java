@@ -17,11 +17,13 @@ public class CustomerProducer {
     @Value(value = "${customer.topic.name}")
     private String customerTopicName;
 
+    private final Logger LOGGER = LoggerFactory.getLogger(CustomerProducer.class);
+
     public void publishOrderDetail(OrderDetail orderDetail) {
         ListenableFuture<SendResult<String, OrderDetail>> future = customerKafkaTemplate.send(customerTopicName, orderDetail);
 
         future.addCallback(new ListenableFutureCallback<SendResult<String, OrderDetail>>() {
-            private final Logger LOGGER = LoggerFactory.getLogger(CustomerProducer.class);
+
 
             @Override
             public void onSuccess(SendResult<String, OrderDetail> result) {

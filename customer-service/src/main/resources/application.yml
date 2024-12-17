@@ -25,6 +25,21 @@ spring:
     url: jdbc:postgresql://localhost:6432/dadm?escapeSyntaxCallMode=callIfNoReturn&currentSchema=adm_own
     username: sysadmin
     password: smart!1234
+#  kafka:
+#    listener:
+#      missing-topics-fatal: false
+#    consumer:
+#      #      bootstrap-servers: localhost:9092
+#      bootstrap-servers: b-1.grmdevpubsubmskcl.tc8mro.c4.kafka.ap-northeast-2.amazonaws.com:9092,b-2.grmdevpubsubmskcl.tc8mro.c4.kafka.ap-northeast-2.amazonaws.com:9092
+#      group-id: order
+#      auto-offset-reset: latest
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#    producer:
+#      #      bootstrap-servers: localhost:9092
+#      bootstrap-servers: b-1.grmdevpubsubmskcl.tc8mro.c4.kafka.ap-northeast-2.amazonaws.com:9092,b-2.grmdevpubsubmskcl.tc8mro.c4.kafka.ap-northeast-2.amazonaws.com:9092
+#      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+#      value-serializer: org.apache.kafka.common.serialization.StringSerializer
   jpa:
     hibernate:
       ddl-auto: update
@@ -42,5 +57,5 @@ order:
     name: orderTopic
 
 kafka:
-#  bootstrapAddress: b-2.edamsk.zn38qj.c3.kafka.ap-northeast-2.amazonaws.com:9092,b-1.edamsk.zn38qj.c3.kafka.ap-northeast-2.amazonaws.com:9092
-  bootstrapAddress: localhost:9092
+  bootstrapAddress: b-1.grmdevpubsubmskcl.tc8mro.c4.kafka.ap-northeast-2.amazonaws.com:9092,b-2.grmdevpubsubmskcl.tc8mro.c4.kafka.ap-northeast-2.amazonaws.com:9092
+#  bootstrapAddress: localhost:9092

@@ -53,7 +53,7 @@ public class CustomerService {
     customer.reserveCredit(orderDetail.getId(), orderDetail.getOrderDetails().getOrderTotal());
 
     System.out.println("차감 후 현재 보유한 금액: " + customer.getCreditLimit().getAmount().toString());
-    orderDetail.noteCreditReserved();
+//    orderDetail.noteCreditReserved();
     // 주문상태 APPROVED로 업데이트
     orderDetail.noteCreditReserved();
 

@@ -42,5 +42,7 @@ order:
     name: orderTopic
 
 kafka:
-#  bootstrapAddress: b-2.edamsk.zn38qj.c3.kafka.ap-northeast-2.amazonaws.com:9092,b-1.edamsk.zn38qj.c3.kafka.ap-northeast-2.amazonaws.com:9092
-  bootstrapAddress: localhost:9092
+  bootstrapAddress: b-2.grmdevpubsubmskcl.tc8mro.c4.kafka.ap-northeast-2.amazonaws.com:9094,b-1.grmdevpubsubmskcl.tc8mro.c4.kafka.ap-northeast-2.amazonaws.com:9092
+#  bootstrapAddress: b-2.grmdevpubsubmskcl.tc8mro.c4.kafka.ap-northeast-2.amazonaws.com:9094,b-1.grmdevpubsubmskcl.tc8mro.c4.kafka.ap-northeast-2.amazonaws.com:9094
+#  bootstrapAddress: b-2.grmdevpubsubmskcl.tc8mro.c4.kafka.ap-northeast-2.amazonaws.com:9094,b-1.grmdevpubsubmskcl.tc8mro.c4.kafka.ap-northeast-2.amazonaws.com:9096
+#  bootstrapAddress: localhost:9092

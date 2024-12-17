@@ -18,8 +18,10 @@ public class OrderProducer {
     @Value(value = "${order.topic.name}")
     private String orderTopicName;
 
-    public void publishOrder(OrderDetail orderDetail) {
+    private final Logger LOGGER = LoggerFactory.getLogger(OrderProducer.class);
 
+    public void publishOrder(OrderDetail orderDetail) {
+        LOGGER.info("Call Order-Producer");
         System.out.println("======>>>" + orderDetail.toString());
 
 
